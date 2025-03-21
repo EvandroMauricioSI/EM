@@ -3,70 +3,17 @@
     font-family: "Inter", sans-serif;
 }
 
-
-h1 { 
-    font-size: 2em;
-    color: #003e80;
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-}
-h2{ 
-    font-size: 1.6em; 
-}
-h3{ 
-    font-size: 1.3em;
-}
-strong {
-    font-size: 20px;
-    color: #0f004d;
-}
-p{
-    font-weight:lighter;
-    border-radius: 2%;
-    width: 90%;
-    padding: 20px;
-    margin: auto;
-}
-ul{
-    list-style-type: none;
-}
-li{
-    padding-top: 1%;
-    padding-left: 1%;
-}
-/*CSS DO BOTÃO*/
-button{
-    width: 100%;
-    margin: auto;
-    padding: 12px 24px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}button:hover{
-    background-color: #307234;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}button:active{
-    transform: translateY(1px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-
 /* COMUM A TODAS AS SECTIONS */
 section{
     min-height: 98vh;
     padding-top: 80px;
-    height: 500px;
+    height: 110%;
 }
 
+.perfil{
+    width: 70%;
+
+}
 
 /*SECTION  MAIN*/
 #main {
@@ -110,13 +57,9 @@ section{
 /* section + section { margin-top: 5px;} */
 
 
-/*SECTION FOMAÇÃO*/
+/*SECTION FOMAÇÃO E QUALIFICACAO*/
 #formacao{
-    background-image:url('img/wallpaper-formacao.jpg'), linear-gradient(rgba(255, 6, 6, 0.23), rgba(0,0,0,0.5));
-    background-size: cover; 
-    background-position: center; 
-    height: 70%;
-    overflow: visible;
+    background-color: #e7e7e7;;
 
     .div_formacao_title, .div_formacao_list {width: 80%;}
     
@@ -164,9 +107,9 @@ section{
 
 
 
-/**/
+/* SECTION HABILIDADES TÉCNICAS*/
 #habilidades{
-    background-color: #fbfbef;
+    background-color: #e7e7e7;;
     .habilidades{
         padding-top: 80px;
         padding-left: 20px;
@@ -193,72 +136,74 @@ section{
     
 }
 
-/**/
+/*SECTION PROJETOS ACADEMICOS*/
 #projetos{
-    background-image: url('img/wallpaper-projetos.jpg'); 
-    background-size: cover; background-position: center; 
-    height: 400px;
-    margin-top: 1%;
-    overflow: visible;
-    .colunas{
-        display: flex;
-
-    }
-    .munchkin{
-        min-height: 500px;
-        margin: auto;
-        padding: 2%;
-        background-color: rgb(195, 225, 255);
-        width: 20%;
-        border-radius: 5%;
-        h2{text-align: center;
-        }
-        strong{
-            font-size: 1em;
-        }
-    }
-    .balcaouff{
-
-        min-height: 500px;
-        margin: auto;
-        padding: 2%;
-        background-color: rgb(195, 255, 219);
-        width: 20%;
-        border-radius: 5%;
-        h2{text-align: center;
-        }
-    }
-    .chamada_app{
-
-        min-height: 500px;
-        margin: auto;
-        padding: 2%;
-        background-color: rgb(242, 255, 195);
-        width: 20%;
-        border-radius: 5%;
-        h2{text-align: center;
-        }
-
+    align-items: center;
+    background-color: #e7e7e7;
+    .div_title{
+        margin-top: 1%;
+        width: 50%;
+        background-color: #3d556d;
+        border-radius: 50px;
+        h1{ color: #ffffff; }
     }
 
+    .div_list{
+        padding-top: 2%;
+        padding-bottom: 3%;
+        background-color: #ffffff;
+        margin-top: 2%;
+        width: 50%;
+        border-radius: 50px;
+        .munchkin{
+            margin-top: 1%;
+            margin: auto;
+
+            }
+            strong{
+                font-size: 1em;
+            }
+        }
+        .balcaouff{
+            margin-top: 1%;
+            margin: auto;
+        }
+        .chamada_app{
+            margin-top: 1%;
+
+            margin: auto;
+
+        }
+        hr{
+            margin-right: 4%;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
 }
+    
+    
 
-/**/
+
+
+
+
+/*SECTION EXPERIÊNCIA PROFISSIONAL*/
 
 #profissional{
-    background-color: rgb(213, 230, 234);
+    background-color: #e7e7e7;
     .div_title{
-        width: 90%;
+        margin-top: 1%;
+        width: 50%;
         background-color: #3d556d;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+        border-radius: 50px;
+      
         h1{ color: #ffffff; }
     }
     .div_list_experiences{
-        width: 90%;
+        margin-top: 1%;
+        width: 50%;
         background-color: #ffffff;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+        border-radius: 50px;
         padding-top: 2%;
         padding-bottom: 2%;
         h2{ padding-left: 10%;}
@@ -267,9 +212,9 @@ section{
     }
 }
 
-/**/
+/*SECTION INFORMAÇÕES ADICIONAIS*/
 #adicionais{
-    background-color: #FAFBFF;
+    background-color: #e7e7e7;;
 }
 
 
