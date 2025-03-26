@@ -13,6 +13,9 @@
 
 <body>
 
+    <!-- Botão hamburguer fora do nav -->
+    <button class="navbar-toggler"> ☰ </button>
+
     <!-- MENU VERTICAL -->
     <nav>
         <div class="nav-logo">
@@ -21,22 +24,14 @@
                 <span class="d-block text-center text-white mt-2">Evandro Narciso Mauricio</span>
                 <hr class="divider mx-auto">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
             <div class="menu-h">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item hidden-home"><a class="nav-link" href="index.html">Home</a></li>
-                    
                     <li class="nav-item"><a class="nav-link" href="em-formacao.html">Formação e Qualificações</a></li>
-                    
                     <li class="nav-item"><a class="nav-link" href="em-skills.html">Habilidades técnicas</a></li>
-                    
                     <li class="nav-item"><a class="nav-link" href="em-projects.html">Projetos acadêmicos</a></li>
-                    
                     <li class="nav-item"><a class="nav-link" href="em-experiences.html">Experiência profissional</a></li>
-                    
                     <li class="nav-item"><a class="nav-link" href="em-more_information.html">Informações adicionais</a></li>
                 </ul>
             </div>
@@ -54,8 +49,14 @@
 
     </section>
 
-    <!-- CHAMADA JAVA SCRIPT -->
-    <script src="resizer.js"></script>
+    <!-- Scripts -->
+    <script>
+        const toggler = document.querySelector('.navbar-toggler');
+        const nav = document.querySelector('nav');
+        toggler.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
 </body>
 
 

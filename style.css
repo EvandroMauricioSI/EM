@@ -1,50 +1,66 @@
+/* Reset e configurações globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
-html {  scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
 
-body { background-color: white; }
+body {
+    background-color: white;
+}
 
+/* Tipografia */
 h1 {
-    text-align: left;
+    text-transform: uppercase;
     font-size: 2.5em;
     color: #003e80;
     text-align: center;
-    width: 100%;
     padding: 20px;
-    margin: auto;
+    margin: 0 auto;
+    width: 100%;
 }
-h2{
-    font-size: 1.6em; 
 
+h2 {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: #2c3e50;
 }
-h3{ 
+
+h3 {
+    text-transform: uppercase;
     font-size: 1.3em;
 }
+
 strong {
     font-size: 20px;
     color: #0f004d;
 }
-p{
-    font-weight:lighter;
+
+p {
+    font-weight: lighter;
     border-radius: 2%;
     width: 90%;
     padding: 20px;
-    margin: auto;
-}
-ul{
-    list-style-type: none;
-}
-li{
-    padding-top: 1%;
-    padding-left: 1%;
+    margin: 0 auto;
 }
 
-/*CSS DO BOTÃO*/
-button{
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 1% 0 0 1%;
+}
+
+/* Botão */
+button {
     width: 350px;
     padding: 12px 24px;
     background-color: #3788C7;
@@ -56,107 +72,227 @@ button{
     text-transform: uppercase;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}button:hover{
+}
+button:hover {
     background-color: #21b02b;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}button:active{
+}
+
+button:active {
     transform: translateY(1px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/*CSS DO MENU HORIZONTAL*/
+/* Navegação */
+/* Navegação */
 nav {
     background-color: #333;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
+    width: 250px; /* Largura padrão em telas grandes */
     padding-top: 20px;
     transition: all 0.3s ease;
     z-index: 1000;
 }
+
 .navbar-brand {
     text-align: center;
     padding: 10%;
 }
+
 .navbar-brand img {
-    max-width: 10%; /* Ajuste o tamanho conforme necessário */
+    max-width: 10%;
 }
+
 .navbar-brand span {
     font-size: 18px;
     font-weight: 500;
+
 }
+
 .divider {
-    border: 0;
+    margin-top: 50px;
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     width: 90%;
-    margin-top: 10%;
+    margin: 10% auto 0;
 }
 
-
-.nav-logo img { /* Logo */
+.nav-logo img {
     max-width: 150px;
     display: block;
     margin: 0 auto 20px;
 }
-.navbar-nav {   /* Estilização dos itens do menu */
-    flex-direction: column;
+
+/* Links do menu */
+.nav-link {
+    color: white !important;
+    padding: 15px 25px !important;
+    text-align: left;
+    display: block;
     width: 100%;
+    transition: background-color 0.3s, color 0.3s;
 }
-.nav-item {
+
+/* Efeito hover e clique */
+.nav-link:hover,
+.nav-link:active {
+    background-color: #555;
+    color: #fff;
+}
+
+
+/* Botão hamburguer */
+.navbar-toggler {
     width: 100%;
+    position: fixed; /* Mantém fixo na tela */
+    left: 0px; /* Mudado de right para left */
+    z-index: 1100;
+    display: none; /* Escondido por padrão em telas grandes */
+    background: #1f1f1f;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px; /* Para melhor clicabilidade */
+    margin-top: 0px;
+}
+.navbar-toggler:hover{
+    background:  #333;;
+    
 }
 .hidden-home {
     display: none;
 }
-.nav-link {
-    color: white !important;
-    padding: 15px 25px !important;
-    transition: background-color 0.3s;
-    width: 100%;
-    text-align: left;
-}
-.nav-link:hover {
-    background-color: #555;
-}
-.navbar-toggler {   /* Botão hamburger */
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 1100;
-    display: none;
-}
 
-
-#main {     /* Conteúdo principal */
-
-
+/* Conteúdo principal */
+#main {
+    margin-top: 10%;
     transition: margin-left 0.3s ease;
 }
+
+section {
+    min-height: 98vh;
+    padding-top: 2%;
+    margin-left: 20%;
+}
+
+.div_title {
+    border-top-left-radius: 50px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(27, 67, 99), rgb(55, 136, 199), rgba(255, 255, 255, 0));
+}
+
+.div_title h1 {
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 2%;
+    margin-left: 10%;
+}
+
+/* Seções específicas */
+#formacao .div_formacao_list {
+    display: flex;
+}
+
+#formacao h2 {
+    text-align: justify;
+    padding: 1%;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+#formacao .list_L,
+#formacao .list_R {
+    text-align: left;
+    padding: 2%;
+    width: 50%;
+}
+
+#formacao .list_R {
+    max-height: 70vh;
+    overflow: scroll;
+}
+
+#formacao .list_L:hover,
+#formacao .list_R:hover {
+    background-color: rgba(233, 233, 233, 0.438);
+}
+
+#habilidades .habilidades {
+    margin: 20px auto;
+}
+
+#habilidades h2 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#habilidades li {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+#projetos .div_list,
+#profissional .div_list_experiences {
+    padding: 2% 0 3%;
+    margin: 2% auto 0;
+    width: 90%;
+}
+
+#projetos .div_list .munchkin,
+#projetos .div_list .balcaouff,
+#projetos .div_list .chamada_app {
+    margin: 1% auto 0;
+}
+
+#projetos strong {
+    font-size: 1em;
+}
+
+#profissional h2,
+#profissional ul {
+    padding-left: 10%;
+}
+
+hr {
+    margin: 4% 1% 4% 1%;
+    color: #3d556d50;
+}
+
+#profissional hr {
+    margin: 2%;
+    color: #00000050;
+}
+
 
 /* Media queries para responsividade */
 @media screen and (max-width: 768px) {
     nav {
-        width: 0;
+        width: 0; /* Escondido por padrão em telas pequenas */
         overflow: hidden;
     }
 
     nav.show {
-        width: 200px;
+        width: 200px; /* Aparece quando ativado */
     }
 
     .navbar-toggler {
-        display: block;
+        display: block !important;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1100;
     }
 
     #main {
-        margin-left: 0;
-    }
-
-    .nav-logo img {
-        max-width: 120px;
+        margin-left: 0; /* Ajusta o conteúdo principal */
     }
 
     .nav-link {
@@ -175,13 +311,9 @@ nav {
     }
 }
 
-/* Ajustes para o Bootstrap collapse */
-.navbar-collapse {
-    width: 100%;
-}
-
 @media screen and (min-width: 769px) {
     .navbar-collapse {
         display: block !important;
     }
 }
+
