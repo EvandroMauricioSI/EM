@@ -1,155 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Evandro Mauricio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="section.css">
 </head>
 
 <body>
-
-    <!-- MENU HORIZONTAL -->
+    <!-- MENU VERTICAL -->
     <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <img src="img/logoEM.png" alt="Logo">
-            </div>
+        <div class="nav-logo">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/perfil_em_3.png" alt="Logo" class="d-block mx-auto">
+                <span class="d-block text-center text-white mt-2">Evandro Narciso Mauricio</span>
+                <hr class="divider mx-auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="menu-h">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="em-formacao.html">Formação e Qualificações</a></li>
-                    <li><a href="em-skills.html">Habilidades técnicas</a></li>
-                    <li><a href="em-projects.html">Projetos academicos</a></li>
-                    <li><a href="em-experiences.html">Experiência profissional</a></li>
-                    <li><a href="em-more_information.html">Informações adicionais</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item hidden-home"><a class="nav-link" href="index.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="em-formacao.html">Formação e Qualificações</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="em-skills.html">Habilidades técnicas</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="em-projects.html">Projetos acadêmicos</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="em-experiences.html">Experiência profissional</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="em-more_information.html">Informações adicionais</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    <!-- SECTION - MAIN -->
+
+    <!--MAIN -->
     <section id="main">
-        <div class="divL">
-            <img src="img/perfil_em_3.png" class="perfil" alt="perfil"><br>
-        </div>
-        <div class="resizer"></div>
-        <div class="divR">
+        <div class="div_title">
             <h1>EVANDRO NARCISO MAURICIO</h1>
-            <ul>
-                <li><strong>São Gonçalo – RJ</strong>
+        </div>
+        
+            <ul class="list-unstyled">
+                <li><strong>São Gonçalo – RJ</strong></li>
+                <li><strong>Telefone:</strong> (21) 99132-8474 | (21) 98186-2030</li>
+                <li>
+                    <a href="mailto:evandromauricio@id.uff.br">
+                        <img src="img/icon-email.png" alt="icon-email" style="width: 20px;"> evandromauricio@id.uff.br
+                    </a>
                 </li>
-                <li><strong>Telefone: </strong> (21) 99132-8474 | (21) 98186-2030
+                <li>
+                    <a href="https://www.linkedin.com/in/evandro-mauricio-633a82191/" target="_blank" rel="externo">
+                        <img src="img/icon-linkedin.png" alt="icon-linkedin" style="width: 20px;"> linkedin.com/in/evandro-mauricio
+                    </a>
                 </li>
-                <li><a href="mailto:evandromauricio@id.uff.br"> <img src="img/icon-email.png" alt="icon-email"> evandromauricio@id.uff.br</a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/evandro-mauricio-633a82191/" target="_blank" rel="externo"><img src="img/icon-linkedin.png" alt="icon-linkedin"> linkedin.com/in/evandro-mauricio</a>
-                </li>
-                <li><br><a href="https://github.com/EvandroMauricioSI" target="_blank" rel="externo"> <img src="img/icon-github.png" alt="icon-github"> https://github.com/EvandroMauricioSI</a>
+                <li>
+                    <a href="https://github.com/EvandroMauricioSI" target="_blank" rel="externo">
+                        <img src="img/icon-github.png" alt="icon-github" style="width: 20px;"> https://github.com/EvandroMauricioSI
+                    </a>
                 </li>
             </ul>
-        </div>
-    </section>
-      
-    <!-- SECTION - FORMAÇÃO (formacao.html) -->
-    <!-- SECTION - HABILIDADES -->
-    <!-- SECTION - FORMAÇÃO -->
-    <section id="projetos" >
-        <h1>PROJETOS ACADÊMICOS</h1>
-        <div class="colunas">
-        
-            <div class="munchkin">
-                <h2>Munchkin</h2>
-                
-                <p>
-                Abra portas secretas e mate todos os monstros que cruzarem seu caminho. Trapaceie seus colegas, pegue todos os tesouros e saia correndo! <br>
-                <strong>Munchkin</strong> é um jogo de cartas divertido e estratégico, perfeito para amantes de RPG que gostam de aventura e intrigas. <br>
-                Para quem nunca jogou <strong>RPG</strong> ele é simples de explicar e jogar além de garantir muitas risadas. <strong>Munchkin</strong> é um jogo ótimo para jogar com os amigos, mas talvez a amizade seja desfeita no decorrer da aventura. <br>
-                O jogo base tem um temática <strong>RPG</strong> medieval com sátiras e ironias e a cada expansão conta com cartas exclusivas que adicionam novas Raças e Monstros.
-                </p>
-                <a href="https://github.com/EvandroMauricioSI/Munchkin" target="_blank" rel="external">
-                    <button>Conheça o projeto no GitHub</button> 
-                </a>
-            </div>
-
-            <div class="balcaouff">
-                <h2>Balcão UFF</h2>
-                <p>O sistema Balcão UFF visa fomentar a colaboração e o senso de comunidade, além de promover a sustentabilidade e a economia circular dentro do ambiente universitário, oferecendo um ambiente virtual seguro e controlado, onde alunos, professores e funcionários podem trocar, vender ou doar bens e serviços de forma prática e confiável.</p>
-                <div class="bt">
-                    <a href="https://github.com/EvandroMauricioSI/Balcaouff" target="_blank" rel="external">
-                        <button>Conheça o projeto no GitHub</button> 
-                    </a>
-                </div>
-                
-            </div>
-
-            <div class="chamada_app">
-                <h2>Chamada App</h2>
-                
-                <p>
-                    O sistema de chamada inteligente visa simplificar o processo de chamada das disciplinas da UFF, tornando desnecessário interromper a aula para identificar quais alunos estão presentes ou passar folhas para coleta de assinatura dos presentes.
-                </p>
-                <a href="https://github.com/EvandroMauricioSI/Chamada_app" target="_blank" rel="external">
-                    <button>Conheça o projeto no GitHub</button> 
-                </a>
-            </div>
-       
-       
-        </div>
-
-        </div>
-
-                
-        
-        
-        
-
-
-
-
-    </section>
-    
-    <!-- SECTION - EXPERIÊNCIAS -->
-    <section id="profissional">
-        <div class="div_title">
-            <h1>EXPERIÊNCIAS PROFISSIONAIS</h1>
-        </div>
-        <div class="div_list_experiences">
-            <h2>TELEMONT Engenharia de Telecomunicações S/A</h2>
-            <ul>
-                <li>Instalação e manutenção de linhas de acesso (LA)</li>
-                <li>Manutenção e remoção de telefones de utilidade pública</li>
-            </ul>  <hr>
-            <h2>PROVIDER Soluções Tecnológica</h2>
-            <ul>
-                <li>Controle de inventário de equipamentos de telecomunicações.</li>
-                <li>Processamento de dados e arquivamento de documentos operacionais.</li>
-            </ul> <hr>
-
-            <h2>Nokia Siemens Network Serviços LTDA</h2>
-            <ul>
-                <li>Instalação e manutenção de linhas de acesso (LA)</li>
-                <li>Manutenção e remoção de telefones de utilidade pública</li>
-            </ul> <br>
-
-        </div>
-        
-
-
     </section>
 
-    <!-- SECTION - INFORMAÇÕES ADICIONAIS -->
-    <section id="adicionais">
-        <h1>INFORMAÇÕES ADICIONAIS</h1>
-
-    </section>
-
-    <!-- CHAMADA JAVA SCRIPT -->
-    <script src="resizer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
-
 </html>
