@@ -94,7 +94,7 @@ hr {
     border-radius: 10px;
     margin-right: 85%;
     padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
     position: fixed; /* Mantém fixo na tela */
 
@@ -173,13 +173,13 @@ nav {
     color: #fff;
 }
 
-/* Conteúdo principal */
+/* SECTION PADRÃO */
 section {
     background-color: rgb(241, 239, 239);
     min-height: 98vh;
-    margin-top: 10%;
-    padding-top: 2%;
-    margin-left: 20%;
+    margin-top: 50px;
+    padding-top: 10px;
+    margin-left: 250px;
     li{
         margin: 1%;
         border-radius: 5px;
