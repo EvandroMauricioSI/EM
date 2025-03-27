@@ -27,10 +27,13 @@ h2 {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1.3em;
+    color: #3788C7;
 }
 
 h3 {
+    color: #333;
     text-transform: uppercase;
+    
 }
 
 strong {
@@ -181,7 +184,8 @@ nav {
 
 /* SECTION PADRÃO */
 section {
-    background-color: rgb(241, 239, 239);
+    width: 50%;
+
     min-height: 98vh;
     margin-top: 50px;
     padding-top: 10px;
@@ -204,7 +208,6 @@ section {
     /*background: linear-gradient(to right, rgb(51, 51, 51), rgb(55, 136, 199), rgb(2241, 239, 239));*/
 }
 .div_title h1 {
-    color: #333;
     text-align: left;
     font-size: 1.5rem;
     font-weight: 700;
@@ -219,19 +222,29 @@ section {
     padding-left: 10px;
     text-align: left;
     width: 100%;
-
+}
+hr{
+    width: 570px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Seções específicas */
 /* Seção Main - @index.html*/
 #main{
+
     .div_img{
         justify-items: center;
         .minha-imagem {
+            justify-items: center;
             width: 150px;
             height: 150px;
             
         }
+    }
+    hr{
+        color: #ececec;
+        margin-bottom: 20px;
     }
     .div_corpo{
         justify-items: center;
@@ -240,19 +253,19 @@ section {
         }
         .bt-contato{
             justify-items: left;
-            width: 400px;
+            width: 350px;
             border-radius: 50px;
             border: none;
-            background-color: #4887b8;
-            padding: 5px;
+            background-color: #3788C7;
+            padding: 10px;
             margin: 5px;
         }
         .li{
             text-align: left;
-            padding-left: 30px;
+            padding-left: 10px;
         }
         .icon{
-            margin-left: 30px;
+            margin-left: 5px;
             margin-right: 10px; 
             width: 25px
         }
