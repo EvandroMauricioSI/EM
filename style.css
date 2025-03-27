@@ -17,7 +17,7 @@ body {
 /* Tipografia */
 h1 {
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: #003e80;
     text-align: center;
     width: 100%;
@@ -26,13 +26,11 @@ h1 {
 h2 {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 1.6em;
-    color: #2c3e50;
+    font-size: 1.3em;
 }
 
 h3 {
     text-transform: uppercase;
-    font-size: 1.3em;
 }
 
 strong {
@@ -44,8 +42,7 @@ p {
     text-align: justify;
     border-radius: 2%;
     width: 90%;
-    padding: 20px;
-    margin: 0 auto;
+    padding-left: 10px;
 }
 
 /* Listas */
@@ -53,10 +50,19 @@ ul, ol {
     list-style-type: none;
     padding: 0;
 }
+li{
+    padding-left: 10px;
+}
 
 hr {
     margin-top: 5%;
     color: #333;
+}
+.hr-degrade{
+    height: 2px; /* Define a espessura da linha */
+    border: none; /* Remove a borda padrão do hr */
+    background: linear-gradient(to right, #333, #fff);
+    margin: 0%;
 }
 
 /* Botão */
@@ -134,7 +140,7 @@ nav {
 }
 
 .navbar-brand img {
-    max-width: 5%;
+    max-width: 3%;
 }
 
 .navbar-brand span {
@@ -195,12 +201,12 @@ section {
     margin-top: 0px;
     margin-left: 0%;
     text-transform: uppercase;
-    background: linear-gradient(to right, rgb(51, 51, 51), rgb(55, 136, 199), rgb(2241, 239, 239));
+    /*background: linear-gradient(to right, rgb(51, 51, 51), rgb(55, 136, 199), rgb(2241, 239, 239));*/
 }
 .div_title h1 {
-    color: white;
+    color: #333;
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.2;
     padding: 2%;
@@ -219,13 +225,47 @@ section {
 /* Seções específicas */
 /* Seção Main - @index.html*/
 #main{
-    .div_corpo{
-        .imgMain{
-            margin-left: 10%;
+    .div_img{
+        justify-items: center;
+        .minha-imagem {
+            width: 150px;
+            height: 150px;
+            
         }
     }
-    
+    .div_corpo{
+        justify-items: center;
+        .p{
+            padding: 0px;
+        }
+        .bt-contato{
+            justify-items: left;
+            width: 400px;
+            border-radius: 50px;
+            border: none;
+            background-color: #4887b8;
+            padding: 5px;
+            margin: 5px;
+        }
+        .li{
+            text-align: left;
+            padding-left: 30px;
+        }
+        .icon{
+            margin-left: 30px;
+            margin-right: 10px; 
+            width: 25px
+        }
+        .link{
+            display: flex;
+            text-decoration: none;
+            color: #ffffff;
+
+        }
+        
+    }
 }
+
 /* Seção  - @em-formacao.html*/
 
 /* Seção HABILIDADES  - @em-skills.html*/
@@ -244,6 +284,12 @@ section {
 }
 
 /* Seção Expericências Profissionais - @em-experiences.html*/
+#profissional{
+
+    li{
+        padding: 0%;
+    }
+}
 
 
 
@@ -255,7 +301,7 @@ section {
     }
 
     nav.show {
-        width: 200px; /* Aparece quando ativado */
+        width: 250px; /* Aparece quando ativado */
     }
 
     .navbar-toggler {
