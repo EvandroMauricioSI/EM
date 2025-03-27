@@ -189,8 +189,6 @@ section {
         margin: 1%;
     }
 }
-
-
 .div_title {
     margin-top: 0px;
     margin-left: 0%;
@@ -218,6 +216,14 @@ section {
 
 /* Seções específicas */
 /* Seção Main - @index.html*/
+#main{
+    .div_corpo{
+        .imgMain{
+            margin-left: 10%;
+        }
+    }
+    
+}
 /* Seção  - @em-formacao.html*/
 
 /* Seção HABILIDADES  - @em-skills.html*/
@@ -258,7 +264,7 @@ section {
         z-index: 1100;
     }
 
-    #main {
+    #main, #formacao, #habilidades, #projetos, #profissional, #adicionais {
         margin-left: 0; /* Ajusta o conteúdo principal */
     }
 
