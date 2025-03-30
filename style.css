@@ -19,7 +19,8 @@ h1 {
     text-transform: uppercase;
     font-size: 1.5em;
     color: #003e80;
-    text-align: center;
+    text-align: left;
+    padding-left: 100px;
     width: 100%;
 }
 
@@ -184,7 +185,7 @@ nav {   /*Menu em tela grande*/
 section {
     min-height: 98vh;
     margin-top: 50px;
-    padding-top: 10px;
+    margin-top: 0px;
     margin-left: 250px;
     li{
         margin: 1%;
@@ -224,23 +225,35 @@ hr{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.capa{
+    margin-top: 0px;
+    height: 100px;
+    background-color: #333;
+    h1{
+        padding-top: 40px;
+        color: #ececec;
+    }
+}
 
 /* Seções específicas */
+
 /* Seção Main - @index.html*/
 #main{
-
     .div_img{
+        margin-top: -100px;
         justify-items: center;
         .minha-imagem {
             justify-items: center;
             width: 150px;
-            height: 150px;
-            
+            height: 150px;   
         }
     }
     hr{
         color: #ececec;
         margin-bottom: 20px;
+    }
+    p{
+        text-align: center;
     }
     .div_corpo{
         justify-items: center;
@@ -294,7 +307,6 @@ hr{
 
 /* Seção Expericências Profissionais - @em-experiences.html*/
 #profissional{
-
     li{
         padding: 0%;
     }
