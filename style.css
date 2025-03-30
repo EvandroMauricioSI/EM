@@ -226,11 +226,12 @@ hr{
     margin-bottom: 20px;
 }
 .capa{
+
     margin-top: 0px;
-    height: 100px;
+    height: 130px;
     background-color: #333;
     h1{
-        padding-top: 40px;
+        padding-top: 35px;
         color: #ececec;
     }
 }
@@ -239,30 +240,32 @@ hr{
 
 /* Seção Main - @index.html*/
 #main{
-    .div_img{
-        margin-top: -100px;
-        justify-items: center;
-        .minha-imagem {
-            justify-items: center;
-            width: 150px;
-            height: 150px;   
-        }
-    }
-    hr{
-        color: #ececec;
-        margin-bottom: 20px;
+    .capa{
+        
+        background-image: url(img/backup-img/capa-main.jpg);
+        background-position: top, right;
+        background-color: #33333373;
     }
     p{
         text-align: center;
     }
     .div_corpo{
         justify-items: center;
+        .div_img{
+            margin-top: -100px;
+            justify-items: center;
+            .minha-imagem {
+                justify-items: center;
+                width: 150px;
+                height: 150px;   
+            }
+        }
         .p{
             padding: 0px;
         }
         .bt-contato{
             justify-items: left;
-            width: 350px;
+            width: 270px;
             border-radius: 50px;
             border: none;
             background-color: #3788C7;
