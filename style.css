@@ -128,7 +128,7 @@ nav {   /*Menu em tela grande*/
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
+    width: 350px; /* colocar o mesmo valor em section{margin-left:} */
     padding-top: 20px;
     transition: all 0.3s ease;
     z-index: 1100;
@@ -139,11 +139,9 @@ nav {   /*Menu em tela grande*/
     width: 500px;
     padding: 10%;
 }
-
 .navbar-brand img {
     max-width: 2%;
 }
-
 .navbar-brand span {
     font-size: 0.7em;
     font-weight: 100;
@@ -169,15 +167,21 @@ nav {   /*Menu em tela grande*/
     padding: 15px 25px !important;
     text-align: left;
     display: block;
-    width: 100%;
+    width: 97%;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
+    
 }
 
 /* Efeito hover e clique */
 .nav-link:hover,
 .nav-link:active {
-    background-color: #555;
-    color: #fff;
+    width: 97%;
+    background-color: #3788C7;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+ 
 }
 
 /* SECTION PADRÃO */
@@ -185,7 +189,7 @@ section {
     min-height: 98vh;
     margin-top: 50px;
     margin-top: 0px;
-    margin-left: 250px;
+    margin-left: 350px;
     h2{
         margin-left: 0px;
         width: 90%;
@@ -239,9 +243,11 @@ hr{
 /* Seção Main - @index.html*/
 #main{
     .capa{
+        /* 
         background-image: url(img/backup-img/capa-main.jpg);
         background-position: top, right;
-        background-color: #33333373;
+        */
+        background-color: #333333;
     }
     p{
         text-align: center;
