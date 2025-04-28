@@ -34,7 +34,6 @@ h2 {
 h3 {
     color: #333;
     text-transform: uppercase;
-    
 }
 
 strong {
@@ -78,7 +77,6 @@ hr {
     color: white;
     border: none;
     font-size: 0.7em;
-
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
@@ -168,20 +166,15 @@ nav {   /*Menu em tela grande*/
     text-align: left;
     display: block;
     width: 97%;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    
 }
 
 /* Efeito hover e clique */
-.nav-link:hover,
-.nav-link:active {
+.nav-link:hover{
     width: 97%;
     background-color: #3788C7;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
- 
+    border-radius: 10px;
 }
 
 /* SECTION PADRÃO */
@@ -241,58 +234,78 @@ hr{
 /* Seções específicas */
 
 /* Seção Main - @index.html*/
-#main{
-    .capa{
-        /* 
-        background-image: url(img/backup-img/capa-main.jpg);
-        background-position: top, right;
-        */
-        background-color: #333333;
-    }
-    p{
-        text-align: center;
-    }
-    .div_corpo{
-        justify-items: center;
-        .div_img{
-            margin-top: -100px;
-            justify-items: center;
-            .minha-imagem {
-                justify-items: center;
-                width: 150px;
-                height: 150px;   
-            }
-        }
-        .p{
-            padding: 0px;
-        }
-        .bt-contato{
-            justify-items: left;
-            width: 270px;
-            border-radius: 50px;
-            border: none;
-            background-color: #3788C7;
-            padding: 10px;
-            margin: 5px;
-        }
-        .li{
-            text-align: left;
-            padding-left: 10px;
-        }
-        .icon{
-            margin-left: 5px;
-            margin-right: 10px; 
-            width: 25px
-        }
-        .link{
-            display: flex;
-            text-decoration: none;
-            color: #ffffff;
-
-        }
-        
-    }
+#main {
+    display: flex;
+    justify-content:baseline;
+    flex-direction: column; /* adicionei para melhor organização vertical */
+    min-height: 100vh;
+    box-sizing: border-box;
 }
+
+
+#main p {
+    text-align: center;
+}
+
+.div_corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_img {
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+}
+
+.minha-imagem {
+    width: 150px;
+    height: 150px;
+}
+
+.div_corpo p {
+    padding: 0px;
+}
+
+.bt-contato {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 270px;
+    border-radius: 50px;
+    border: none;
+    background-color: #3788C7;
+    padding: 10px;
+    margin: 5px;
+    font-size: 0.8em;
+}
+
+li {
+    text-align: left;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.icon {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul.list-unstyled {
+    padding: 0;
+    margin: 0;
+}
+
 
 /* Seção  - @em-formacao.html*/
 
@@ -319,9 +332,8 @@ hr{
     }
 
     nav.show {
-        width: 250px; /* Aparece quando ativado */
+        width: 350px; /* Aparece quando ativado */
     }
-
     .navbar-toggler {
         display: block !important;
         position: absolute;
