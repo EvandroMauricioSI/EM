@@ -1,0 +1,153 @@
+.navbar-toggler {
+    margin-top: 1%;
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 1100;
+    display: none;
+    background: #333;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+.navbar-toggler:hover{
+    background: #333;
+}
+
+.hidden-home {
+    display: none;
+}
+
+/* MENU; Navegação */
+nav {
+    margin-top: 0px;
+    background-color: #3788C7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    padding-top: 20px;
+    transition: all 0.3s ease;
+    z-index: 1100;
+}
+
+.navbar-brand {
+    text-align: center;
+    width: 500px;
+    padding: 10%;
+}
+.navbar-brand img {
+    max-width: 2%;
+}
+.navbar-brand span {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.divider {
+    margin-top: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    width: 90%;
+    margin: 10% auto 0;
+}
+
+.nav-logo img {
+    max-width: 30%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Links do menu */
+.nav-link {
+    color: white !important;
+    padding: 15px 25px !important;
+    text-align: left;
+    display: block;
+    width: 97%;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito hover e clique */
+.nav-link:hover {
+    width: 97%;
+    background-color: #21567e;
+    border-radius: 10px;
+}
+
+
+
+/* RESPONSIVIDADE DO MENU */
+@media screen and (max-width: 768px) {
+    nav {
+        width: 0;
+        overflow: hidden;
+    }
+
+    nav.show {
+        width: 250px;
+    }
+    .navbar-toggler {
+        display: block !important;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        z-index: 1100;
+    }
+
+    /* Adicione #contatos para ajustar a margem do conteúdo */
+    #index, #formacao, #habilidades, #projetos, #profissional, #adicionais, #contatos {
+        margin-left: 0;
+    }
+
+    .nav-link {
+        padding: 12px 20px !important;
+    }
+
+    /* Estilos para a página de contatos em telas pequenas */
+    #contatos h1 {
+        padding-left: 10px; /* Ajusta o padding do h1 na capa */
+    }
+
+    .div_corpo {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%; /* Garante que o conteúdo ocupe toda a largura */
+    }
+
+    .box, .box-index {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .capa .img-capa, .capa h1 {
+        margin-left: 15px; /* Ajusta a margem da capa */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav.show {
+        width: 150px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 10px 15px !important;
+    }
+
+    .capa h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar-collapse {
+        display: block !important;
+    }
+}

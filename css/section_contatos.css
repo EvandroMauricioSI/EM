@@ -1,0 +1,32 @@
+#contatos{
+    .bt-contato-2 {
+        display: block; /* Para que ocupem toda a largura */
+        width: 100%; /* Largura total do contêiner */
+        max-width: 300px; /* Limite máximo de largura para telas grandes */
+        margin: 10px auto; /* Centraliza o botão e adiciona espaçamento */
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: #3788C7;
+        font-size: 1em;
+        text-align: left;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    .bt-contato-2:hover {
+        background-color: #21547b;
+        transform: translateY(-4px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    .bt-contato-2 .link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .bt-contato-2 .icon {
+        margin-right: 15px;
+    }
+
+}
