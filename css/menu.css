@@ -36,6 +36,7 @@ nav {
     z-index: 1100;
 }
 
+
 .navbar-brand {
     text-align: center;
     width: 500px;
@@ -57,13 +58,14 @@ nav {
 }
 
 .nav-logo img {
-    max-width: 30%;
+    max-width: 20%;
     display: block;
     margin: 0 auto 20px;
 }
 
 /* Links do menu */
 .nav-link {
+    font-size: 1.2em;
     color: white !important;
     padding: 15px 25px !important;
     text-align: left;
@@ -79,6 +81,7 @@ nav {
     background-color: #21567e;
     border-radius: 10px;
 }
+
 
 
 
@@ -133,7 +136,7 @@ nav {
 
 @media screen and (max-width: 480px) {
     nav.show {
-        width: 150px;
+        width: 250px;
     }
 
     .nav-link {

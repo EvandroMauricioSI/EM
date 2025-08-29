@@ -23,16 +23,17 @@ h1 {
     width: 100%;
 }
 h2 {
-    width: 90%;
+    text-align: left;
+    width: 70%;
     margin: 1%;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #3788C7;
 }
 h3 {
     font-weight: 900;
     font-size: 1em;
-    color: #333;
+    color: #003e80;
 }
 
 strong {
@@ -53,6 +54,9 @@ p {
 ul, ol {
     list-style-type: none;
     padding: 0;
+}
+li{
+    font-size: 14px;
 }
 hr {
     margin-right: auto;
@@ -84,7 +88,7 @@ hr {
 }
 .bt_link:hover {
     background-color: #333;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 .bt_link:active {
@@ -130,6 +134,12 @@ section {
     text-align: justify;
     width:80%;
     max-width: 800px;
+}
+.box .img-perfil{
+    display: flex;
+    margin: auto;
+    width: 100px;
+    height: 100px;
 
 }
 
@@ -151,11 +161,6 @@ hr{
     width: 40px;
     height: 40px;
 }
-.capa .img-capa-perfil{
-    margin: auto;
-    width: 80px;
-    height: 80px;
-}
 .capa h1{
     margin-left: 10px; /* Ajuste para não ter margin negativa */
     margin-top: auto;
@@ -172,6 +177,20 @@ hr{
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
+    .linguagens{
+        padding-left: 60px;
+        margin-right: auto;
+    }
+    .icon-code{
+        width: 40px;   
+        padding-right: 10px;
+        margin: 10px;
+    }
+    .dashboard{
+        padding-left: 45px;
+        height: 40%;
+
+    }
 }
 
 #main p {
@@ -179,10 +198,7 @@ hr{
 }
 
 
-
-
 .div_img {
-    margin-top: -100px;
     display: flex;
     justify-content: center;
 }

@@ -3,7 +3,7 @@
         display: block; /* Para que ocupem toda a largura */
         width: 100%; /* Largura total do contêiner */
         max-width: 300px; /* Limite máximo de largura para telas grandes */
-        margin: 10px auto; /* Centraliza o botão e adiciona espaçamento */
+        margin: 15px auto; /* Centraliza o botão e adiciona espaçamento */
         padding: 15px;
         border-radius: 10px;
         border: none;
