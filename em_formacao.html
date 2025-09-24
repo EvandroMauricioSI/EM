@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/section_formacao.css">
+
     
 </head>
 <body>
@@ -49,75 +50,88 @@
                 <strong>FORMAÇÃO ACADÊMICA</strong>
                 <hr>
                 <div class="box-list">
-                    <h3>Bacharelado em Sistemas de Informação</h3>
+                    <h2>Bacharelado em Sistemas de Informação</h2>
                     <ul>
-                        <li><bold>Universidade Federal Fluminense</bold></li>
+                        <li><b>Universidade Federal Fluminense</b></li>
                         <li>Cursando</li>
                     </ul> 
                 </div>
 
                 <div class="box-list">
-                    <h3>Tecnólogo em Gestão de Tecnologia da Informação</h3>
+                    <h2>Tecnólogo em Gestão de Tecnologia da Informação</h2>
                     <ul>
-                        <li><bold>Universidade Estácio de Sá</bold></li>
+                        <li><b>Universidade Estácio de Sá</b></li>
                         <li>Dez/2022</li>
                     </ul> 
                 </div>
 
                 <div class="box-list">
-                    <h3>Técnico em Eletrotécnica</h3>
+                    <h2>Técnico em Eletrotécnica</h2>
                     <ul>
-                        <li><bold>Escola Técnica Eléctra</bold></li>
+                        <li><b>Escola Técnica Eléctra</b></li>
                         <li>Dez/2015</li>
                     </ul> 
                 </div>
             </div>
             <br>
 
-
-            
             <div class="box">
                 <strong>CURSOS</strong>
                 <hr>
 
                 <div class="box-list">
-                    <h3>Curso HTML 5 e CSS 3: módulo 1 ao 5</h3>
-                    <ul>
-                        <li><bold>Curso Em Vídeo</bold> </li>
-                        <li>200 horas</li>
-                    </ul> 
+                    <h2 class="curso" onclick="mostrarPopup('Curso HTML 5 e CSS 3: módulo 1 ao 5','Curso em Vídeo','200 horas')">
+                        Curso HTML 5 e CSS 3: módulo 1 ao 5
+                    </h2>
                 </div>
 
                 <div class="box-list">
-                    <h3>Git e GitHub</h3>
-                    <ul>
-                        <li><bold>Curso Em Vídeo</bold> </li>
-                        <li>20 horas</li>
-
-                    </ul> 
+                    <h2 class="curso" onclick="mostrarPopup('Git e GitHub','Curso em Vídeo','20 horas')">
+                        Git e GitHub
+                    </h2>
                 </div>
 
                 <div class="box-list">
-                    <h3>Python 3 Mundo 1, 2 e 3</h3>
-                    <ul>
-                        <li><bold>Curso Em Vídeo</bold> </li>
-                        <li>120 horas</li>
-
-                    </ul> 
+                    <h2 class="curso" onclick="mostrarPopup('Python 3 Mundo 1, 2 e 3','Curso em Vídeo','120 horas')">
+                        Python 3 Mundo 1, 2 e 3
+                    </h2>
                 </div>
 
                 <div class="box-list">
-                    <h3>PHP Básico</h3>
-                    <ul>
-                        <li><bold>Curso Em Vídeo</bold> </li>
-                        <li>40 horas</li>
-                        
-                    </ul> 
+                    <h2 class="curso" onclick="mostrarPopup('PHP Básico','Curso em Vídeo','40 horas')">
+                        PHP Básico
+                    </h2>
                 </div>
+
+                <div class="box-list">
+                    <h2 class="curso" onclick="mostrarPopup('Intrudução à Análise de Dados','Fundação Bradesco | escola virtual','5 horas')">
+                        Intrudução à Análise de Dados
+                    </h2>
+                </div>
+
+                <div class="box-list">
+                    <h2 class="curso" onclick="mostrarPopup('Modelagem de Dados','Fundação Bradesco | escola virtual','8 horas')">
+                        Modelagem de Dados
+                    </h2>
+                </div>
+
+
+
 
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p><strong>Instituição:</strong> <span id="popup-inst"></span></p>
+            <!-- <p><strong>Descrição:</strong> <span id="popup-desc"></span></p> -->
+            <p><strong>Carga horária:</strong> <span id="popup-hours"></span></p>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script>
@@ -126,7 +140,24 @@
         toggler.addEventListener('click', () => {
             nav.classList.toggle('show');
         });
+
+        function mostrarPopup(titulo, instituicao, horas) {
+            document.getElementById("popup-title").innerText = titulo;
+            document.getElementById("popup-inst").innerText = instituicao;
+            document.getElementById("popup-hours").innerText = horas;
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function fecharPopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        // Fecha ao clicar fora do popup
+        window.onclick = function(event) {
+            if (event.target == document.getElementById("popup")) {
+                fecharPopup();
+            }
+        }
     </script>
-    
 </body>
 </html>
