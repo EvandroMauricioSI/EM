@@ -80,7 +80,33 @@
                 <hr>
 
                 <div class="box-list">
-                    <h2 class="curso" onclick="mostrarPopup('Curso HTML 5 e CSS 3: módulo 1 ao 5','Curso em Vídeo','200 horas')">
+                    <h2 class="curso" onclick="mostrarPopup('Fundamentos do Design Gráfico','Fundação Bradesco | escola virtual','6 horas')">
+                        Fundamentos do Design Gráfico
+                    </h2>
+                </div>
+
+
+
+                <div class="box-list">
+                    <h2 class="curso" onclick="mostrarPopup('Implementando Banco de Dados','Fundação Bradesco | escola virtual','15 horas')">
+                        Implementando Banco de Dados
+                    </h2>
+                </div>
+
+                <div class="box-list">
+                    <h2 class="curso" onclick="mostrarPopup('Modelagem de Dados','Fundação Bradesco | escola virtual','8 horas')">
+                        Modelagem de Dados
+                    </h2>
+                </div>
+
+                <div class="box-list">
+                    <h2 class="curso" onclick="mostrarPopup('Intrudução à Análise de Dados','Fundação Bradesco | escola virtual','5 horas')">
+                        Intrudução à Análise de Dados
+                    </h2>
+                </div>
+
+                <div class="box-list">
+                    <h2 class="curso" onclick="mostrarPopup('Curso HTML 5 e CSS 3: módulo 1 ao 5','Curso em Vídeo','40 horas (cada módulo) = 200 horas')">
                         Curso HTML 5 e CSS 3: módulo 1 ao 5
                     </h2>
                 </div>
@@ -92,7 +118,7 @@
                 </div>
 
                 <div class="box-list">
-                    <h2 class="curso" onclick="mostrarPopup('Python 3 Mundo 1, 2 e 3','Curso em Vídeo','120 horas')">
+                    <h2 class="curso" onclick="mostrarPopup('Python 3 Mundo 1, 2 e 3','Curso em Vídeo','40 horas (cada módulo) = 120 horas')">
                         Python 3 Mundo 1, 2 e 3
                     </h2>
                 </div>
@@ -100,18 +126,6 @@
                 <div class="box-list">
                     <h2 class="curso" onclick="mostrarPopup('PHP Básico','Curso em Vídeo','40 horas')">
                         PHP Básico
-                    </h2>
-                </div>
-
-                <div class="box-list">
-                    <h2 class="curso" onclick="mostrarPopup('Intrudução à Análise de Dados','Fundação Bradesco | escola virtual','5 horas')">
-                        Intrudução à Análise de Dados
-                    </h2>
-                </div>
-
-                <div class="box-list">
-                    <h2 class="curso" onclick="mostrarPopup('Modelagem de Dados','Fundação Bradesco | escola virtual','8 horas')">
-                        Modelagem de Dados
                     </h2>
                 </div>
 
@@ -128,7 +142,6 @@
             <span class="close" onclick="fecharPopup()">&times;</span>
             <h3 id="popup-title"></h3>
             <p><strong>Instituição:</strong> <span id="popup-inst"></span></p>
-            <!-- <p><strong>Descrição:</strong> <span id="popup-desc"></span></p> -->
             <p><strong>Carga horária:</strong> <span id="popup-hours"></span></p>
         </div>
     </div>
@@ -147,6 +160,8 @@
             document.getElementById("popup-hours").innerText = horas;
             document.getElementById("popup").style.display = "block";
         }
+        
+        
 
         function fecharPopup() {
             document.getElementById("popup").style.display = "none";
